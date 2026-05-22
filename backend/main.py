@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.responses import HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from debate import run_debate, judge_debate
@@ -19,11 +20,15 @@ class DebateRequest(BaseModel):
     model2: str = "llama-3.1-8b-instant"
     rounds: int = 4
 
-@app.get("/")
+@app.get("/", response_class=HTMLResponse)
 def getData():
-    print("get data")
-    return {"Hey!, Explore the backend" : "https://llbatefrontend.onrender.com/docs"}
-    return "Hey! This is backend for LLBate. Add '/docs to the url' for exploring routing in fast API(postman <=> Swagger UI) backend"
+    return """
+    <h2>Hey! explore LLBate's backend routing</h2>
+    <a href="https://llbatefrontend.onrender.com/docs" target="_blank">
+        Fast API -> Swagger UI (https://llbatefrontend.onrender.com/docs)
+    </a>
+    """
+    
 
 @app.post("/start-debate")
 def start_debate(req: DebateRequest):
