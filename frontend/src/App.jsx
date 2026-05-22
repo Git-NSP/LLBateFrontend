@@ -7,7 +7,7 @@
 //   const [result, setResult] = useState("");
 
 //   const startDebate = async () => {
-//     const res = await axios.post("http://127.0.0.1:8000/start-debate", {
+//     const res = await axios.post("https://llbatefrontend.onrender.com/start-debate", {
 //       topic: topic,
 //       rounds: 4,
 //     });
@@ -15,7 +15,7 @@
 //   };
 
 //   const judge = async () => {
-//     const res = await axios.post("http://127.0.0.1:8000/judge", {
+//     const res = await axios.post("https://llbatefrontend.onrender.com/judge", {
 //       history: chat,
 //     });
 //     setResult(res.data.result);
@@ -63,7 +63,7 @@
 //   const [result, setResult] = useState("");
 
 //   const startDebate = async () => {
-//     const res = await axios.post("http://127.0.0.1:8000/start-debate", {
+//     const res = await axios.post("https://llbatefrontend.onrender.com/start-debate", {
 //       topic,
 //       rounds: 4,
 //     });
@@ -73,7 +73,7 @@
 //   };
 
 //   const judge = async () => {
-//     const res = await axios.post("http://127.0.0.1:8000/judge", {
+//     const res = await axios.post("https://llbatefrontend.onrender.com/judge", {
 //       history: chat,
 //     });
 
@@ -163,7 +163,7 @@ function App() {
   const [result, setResult] = useState("");
 
   const startDebate = async () => {
-    const res = await axios.post("http://127.0.0.1:8000/start-debate", {
+    const res = await axios.post("https://llbatefrontend.onrender.com/start-debate", {
       topic,
       model1,
       model2,
@@ -187,7 +187,7 @@ function App() {
   };
 
   const judge = async () => {
-    const res = await axios.post("http://127.0.0.1:8000/judge", {
+    const res = await axios.post("https://llbatefrontend.onrender.com/judge", {
       history: chat
     });
 
@@ -277,3 +277,5 @@ function App() {
 }
 
 export default App;
+
+
