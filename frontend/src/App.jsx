@@ -211,16 +211,16 @@ function App() {
           />
 
           <select value={model1} onChange={(e) => setModel1(e.target.value)}>
-            <option value="allam-2-7b">Jessica (allam-2-7b)</option>
-            <option value="llama-3.1-8b-instant">Harvey (llama-3.1-8b-instant)</option>
-            <option value="llama-3.3-70b-versatile">Louis (llama-3.3-70b-versatile)</option>
+            <option value="allam-2-7b">Jessica Pearson(allam-2-7b)</option>
+            <option value="llama-3.1-8b-instant">Harvey Spectre(llama-3.1-8b-instant)</option>
+            <option value="llama-3.3-70b-versatile">Louis Litt(llama-3.3-70b-versatile)</option>
             <option value="qwen/qwen3-32b">Scottie (qwen3-90b)</option>
           </select>
 
           <select value={model2} onChange={(e) => setModel2(e.target.value)}>
             <option value="qwen/qwen3-32b">Daniel Hardman (qwen/qwen3-32b)</option>
-            <option value="llama-3.3-70b-versatile">Tanner (llama-3.3-70b-versatile)</option>
-            <option value="meta-llama/llama-4-scout-17b-16e-instruct">Mike (meta-llama/llama-4-scout-17b)</option>
+            <option value="llama-3.3-70b-versatile">Travis Tanner (llama-3.3-70b-versatile)</option>
+            <option value="meta-llama/llama-4-scout-17b-16e-instruct">Mike Ross(meta-llama/llama-4-scout-17b)</option>
             <option value="llama-3.1-8b-instant">Robert Zane (gemma-4.6-70b-instant)</option>
           </select>
 
