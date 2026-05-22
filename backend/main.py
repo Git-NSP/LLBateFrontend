@@ -22,7 +22,8 @@ class DebateRequest(BaseModel):
 @app.get("/")
 def getData():
     print("get data")
-    return {'message':"h nsp", 'status':200, "age": 21}
+    return {"Hey!, Explore the backend" : "https://llbatefrontend.onrender.com/docs"}
+    return "Hey! This is backend for LLBate. Add '/docs to the url' for exploring routing in fast API(postman <=> Swagger UI) backend"
 
 @app.post("/start-debate")
 def start_debate(req: DebateRequest):
